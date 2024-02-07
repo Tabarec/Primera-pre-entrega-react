@@ -1,0 +1,8 @@
+.NavBar{
+    cursor: pointer;
+    text-align: center;
+}
+
+.NavBar:ul{
+    display: inline-block;
+}
