@@ -1,12 +1,15 @@
+import { Badge } from "@mui/material";
+import { Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 
 const CartWidget = () => {
   return (
-    <div>
-    <span>3</span>
-<IoCartOutline />
-</div>
-  )
-}
+    <Link to="/cart">
+      <Badge badgeContent={0} showZero color="primary">
+        <IoCartOutline size="30px" color="beige" />
+      </Badge>
+    </Link>
+  );
+};
 
-export default CartWidget
+export default CartWidget;
